@@ -102,11 +102,6 @@ public class ReqresTest {
             Assert.assertEquals(sortedId,id);
     }
 
-    @Test
-    public void delete () {
-        Specifications.InstallSpec(Specifications.requestSpec(URL),Specifications.responseSpecStatus(204));
-        given().delete("api/users/2").then().extract();
-    }
 
 }
 
