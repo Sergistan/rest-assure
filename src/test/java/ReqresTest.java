@@ -101,7 +101,6 @@ public class ReqresTest {
             List <Integer> sortedId = id.stream().sorted().collect(Collectors.toList());
             Assert.assertEquals(sortedId,id);
     }
-
     @Test
     public void delete () {
         Specifications.InstallSpec(Specifications.requestSpec(URL),Specifications.responseSpecStatus(204));
