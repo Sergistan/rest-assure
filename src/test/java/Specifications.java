@@ -24,6 +24,10 @@ public class Specifications {
                 .build();
     }
 
+    public static ResponseSpecification responseSpecStatus (int status)  {
+        return new ResponseSpecBuilder()
+                .expectStatusCode(status)
+                .build();
 
             public static void InstallSpec (RequestSpecification request, ResponseSpecification response) {
                 RestAssured.requestSpecification =request;
